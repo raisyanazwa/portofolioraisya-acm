@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raisya Nazwa | Portofolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        Ica
+    </div>
+
+    <ul>
+        <li>
+            <a href="#" onclick="scrollToSection('home'); return false;">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="#" onclick="scrollToSection('about'); return false;">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="#" onclick="scrollToSection('education'); return false;">
+                Education
+            </a>
+        </li>
+
+        <li>
+            <a href="#" onclick="scrollToSection('skills'); return false;">
+                Skills
+            </a>
+        </li>
+
+        <li>
+            <a href="#" onclick="scrollToSection('project'); return false;">
+                Project
+            </a>
+        </li>
+
+        <li>
+            <a href="#" onclick="scrollToSection('contact'); return false;">
+                Contact
+            </a>
+        </li>
+    </ul>
+
+</nav>
+
+<section id="home" class="hero">
+<div class="hero-bg"></div>
+<div class="left">
+    <p class="hello">👋 Halo, Saya</p>
+    <h1>Raisya <span>Nazwa</span> Khoirunnisa</h1>
+    <h2>
+        <span id="typing"></span>
+    </h2>
+    <p class="desc" id="typing-desc">
+    </p>
+
+    <div class="hero-btn">
+        <a href="#" class="btn"
+        onclick="scrollToSection('project'); return false;">
+        Lihat Project
+        </a>
+
+        <a href="#" class="btn-outline"
+        onclick="scrollToSection('contact'); return false;">
+        Hubungi Saya
+        </a>
+    </div>
+</div>
+
+<div class="right">
+    <div class="profile-card">
+        <img src="assets/images/ooooo.jpeg" 
+        alt="Profile"
+        class="profile-img">
+    </div>
+</div>
+</section>
+
+<section id="about" class="about">
+    <div class="about-left">
+        <img src="assets/images/rrrrr.jpeg" alt="Raisya">
+    </div>
+
+    <div class="about-right">
+        <p class="title"></p>
+        <h2><span>About Me</span></h2>
+        <p>
+        Halo! saya merupakan siswi SMK jurusan Pengembangan Perangkat Lunak dan Gim (PPLG).
+        Saya memiliki ketertarikan pada dunia web development karena senang mengubah ide menjadi tampilan website yang menarik dan interaktif.
+        Saat ini saya sedang menjalani PKL di CV Access Media, di mana saya belajar mengembangkan website sekaligus menambah pengalaman bekerja dalam lingkungan profesional.
+        </p>
+
+        <div class="about-info">
+            <div>
+                <h3>5+</h3>
+                <span>Project Latihan</span>
+            </div>
+            <div>
+                <h3>6+</h3>
+                <span>Teknologi</span>
+            </div>
+            <div>
+                <h3>100%</h3>
+                <span>Semangat Belajar</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="education" class="education">
+    <div class="section-title">
+        <span></span>
+        <h2>Education</h2>
+    </div>
+    <div class="education-container">
+        <!-- SD -->
+        <div class="education-card">
+            <div class="edu-icon">
+                <i class="fa-solid fa-school"></i>
+            </div>
+
+            <div class="edu-year">
+                2015 - 2020
+            </div>
+            <h3>SD Negeri 3 Purwajaya</h3>
+        </div>
+
+        <!-- SMP -->
+        <div class="education-card">
+            <div class="edu-icon">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div class="edu-year">
+                2021 - 2023
+            </div>
+            <h3>SMP Negeri 1 Purwadadi</h3>
+        </div>
+
+        <!-- SMK -->
+        <div class="education-card active">
+            <div class="edu-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="edu-year">
+                2024 - Sekarang
+            </div>
+            <h3>SMK Negeri 3 Banjar</h3>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <p class="title"></p>
+    <h2>My Skills</h2>
+    <div class="skill-box">
+
+        <div class="skill-card" onclick="showSkill('html')">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML</h3>
+        </div>
+
+        <div class="skill-card" onclick="showSkill('css')">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS</h3>
+        </div>
+
+        <div class="skill-card" onclick="showSkill('js')">
+            <i class="fa-brands fa-js"></i>
+            <h3>JavaScript</h3>
+        </div>
+
+        <div class="skill-card" onclick="showSkill('php')">
+            <i class="fa-brands fa-php"></i>
+            <h3>PHP</h3>
+        </div>
+
+        <div class="skill-card" onclick="showSkill('laravel')">
+            <i class="fa-brands fa-laravel"></i>
+            <h3>Laravel</h3>
+        </div>
+
+        <div class="skill-card" onclick="showSkill('mysql')">
+            <i class="fa-solid fa-database"></i>
+            <h3>MySQL</h3>
+        </div>
+
+    </div>
+
+    <!-- Modal Detail Skill -->
+    <div id="skillModal" class="skill-modal">
+      <div class="skill-modal-content">
+            <button class="close-modal" onclick="closeSkill()">
+                &times;
+            </button>
+
+            <div class="modal-icon">
+                <i id="skillIcon"></i>
+            </div>
+
+            <h3 id="skillTitle"></h3>
+
+            <p id="skillDesc"></p>
+        </div>
+    </div>
+</section>
+
+<section id="project" class="project">
+    <p class="title"></p>
+    <h2>Project Terbaru</h2>
+
+    <div class="project-grid">
+        <div class="project-card">
+            <img src="assets/images/project6.png" alt="Project 1">
+            <div class="project-content">
+                <h3>Website Portofolio Pribadi</h3>
+                <p>
+                    Website portfolio pribadi yang menampilkan profil, pendidikan, skill, 
+                    dan project dengan desain modern serta animasi interaktif.
+                </p>
+                <div class="tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/images/project5.jpeg" alt="Project 2">
+            <div class="project-content">
+                <h3>Implementasi UI/UX Perpustakaan</h3>
+                <p>
+                    Implementasi desain UI/UX aplikasi perpustakaan dengan 
+                    tampilan modern untuk memudahkan pengguna dalam mengelola dan mengakses informasi buku.
+                </p>
+                <div class="tech">
+                    <span>Figma</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/images/project3.png" alt="Project 3">
+            <div class="project-content">
+                <h3>Website APM (Aplikasi Pengaduan Masyarakat)</h3>
+                <p>
+                    Website Aplikasi Pengaduan Masyarakat untuk memudahkan
+                    masyarakat dalam menyampaikan dan mengelola laporan pengaduan.
+                </p>
+                <div class="tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                    <span>PHP</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="reveal">
+    <div class="section-title">
+        <h2>💌 Contact Me</h2>
+        <p>Let's Be Friends</p>
+    </div>
+
+    <div class="contact-container">
+         <a href="https://wa.me/6287820492151"
+           target="_blank"
+           class="contact-card">
+           <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+
+        <a href="mailto:raisyanazwa373@gmail.com"
+           class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+        </a>
+
+        <a href="https://www.instagram.com/raisyaanzwa/"
+           target="_blank"
+           class="contact-card">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+
+         <a href="https://github.com/raisyanazwa"
+           target="_blank"
+           class="contact-card">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>
+        Made with 🤍 by Raisya Nazwa
+    </p>
+
+    <span>
+        © 2026 Raisya Nazwa K
+    </span>
+</footer>
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
