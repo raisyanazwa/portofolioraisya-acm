@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pelanggan - PetERP Documentation</title>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: '#1C6DFD',
+                    'primary-dark': '#1557CC'
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+
+</head>
+
+<body class="min-h-screen bg-slate-50 text-slate-900">
+
+<!-- ================= NAVBAR ================= -->
+<header class="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-xl">
+
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-3">
+
+            <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-50 ring-1 ring-blue-100">
+
+                <img
+                    src="../assets/images/logo-peterp.png"
+                    alt="PetERP Logo"
+                    class="h-7 w-7 object-contain"
+                >
+
+            </div>
+
+            <div>
+
+                <span class="block text-base font-bold tracking-tight text-slate-900">
+                    PetERP
+                </span>
+
+                <span class="hidden text-[11px] font-medium text-slate-400 sm:block">
+                    Documentation
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- Navigation -->
+        <nav class="flex items-center gap-2">
+
+            <a
+                href="index.html"
+                class="rounded-lg px-4 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-primary"
+            >
+                Beranda
+            </a>
+
+            <a
+                href="index.html#panduan"
+                class="rounded-lg bg-blue-50 px-4 py-2 text-sm font-semibold text-primary"
+            >
+                Panduan
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= MAIN ================= -->
+<main>
+
+
+    <!-- ================= HERO / HEADER ================= -->
+    <section class="relative overflow-hidden border-b border-slate-200 bg-white">
+
+
+        <!-- Decorative background -->
+        <div class="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-blue-100/60 blur-3xl"></div>
+
+        <div class="absolute -right-24 top-10 h-80 w-80 rounded-full bg-indigo-100/50 blur-3xl"></div>
+
+        <div class="absolute inset-0 bg-[linear-gradient(rgba(28,109,253,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(28,109,253,0.035)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+
+
+
+        <div class="relative mx-auto max-w-7xl px-5 pb-12 pt-8 sm:px-6 sm:pb-16 sm:pt-10 lg:px-8">
+
+
+            <!-- ================= BACK TO PANDUAN ================= -->
+            <a
+                href="index.html#panduan"
+                class="group mb-8 inline-flex items-center gap-2 text-sm font-semibold text-slate-500 transition hover:text-primary"
+            >
+
+                <span class="text-lg transition-transform duration-200 group-hover:-translate-x-1">
+                    ←
+                </span>
+
+                <span>
+                    Kembali ke Panduan
+                </span>
+
+            </a>
+
+
+
+            <!-- ================= PAGE HEADER ================= -->
+            <div class="flex flex-col gap-6 sm:flex-row sm:items-center">
+
+
+                <!-- Icon -->
+               
+
+
+
+                <!-- Title -->
+                <div>
+
+
+                    <!-- Badge -->
+                    <div class="mb-2 flex items-center gap-2">
+
+                        <span class="rounded-full bg-blue-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary">
+                            Tutorial 04
+                        </span>
+
+                        <span class="text-xs font-medium text-slate-400">
+                            • Pelanggan
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- Title -->
+                    <h1 class="text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+                        Pelanggan PetERP
+                    </h1>
+
+
+
+                    <!-- Description -->
+                    <p class="mt-3 max-w-2xl text-sm leading-6 text-slate-500 sm:text-base">
+                        Pelajari berbagai fitur untuk mengelola data pelanggan
+                        dan hewan pada aplikasi PetERP.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CONTENT ================= -->
+    <section class="px-5 py-10 sm:px-6 sm:py-14 lg:px-8">
+
+        <div class="mx-auto max-w-6xl">
+
+
+            <!-- ================= LIST HEADER ================= -->
+            <div class="mb-5">
+
+                <div class="flex items-center gap-3">
+
+                    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 text-lg">
+                        📚
+                    </div>
+
+                    <div>
+
+                        <h2 class="font-bold text-slate-900">
+                            Materi Pelanggan
+                        </h2>
+
+                        <p class="text-xs text-slate-400">
+                            Pilih menu yang ingin dipelajari
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= LIST ================= -->
+            <div class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl shadow-slate-200/60">
+
+
+                <!-- ================= DATA PELANGGAN ================= -->
+                <a
+                    href="../detail/data-pelanggan.html"
+                    class="group flex items-center gap-4 border-b border-slate-100 px-5 py-5 transition hover:bg-blue-50/40 sm:px-6"
+                >
+
+                    <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-xl ring-1 ring-blue-100">
+                        👥
+                    </div>
+
+
+                    <div class="min-w-0 flex-1">
+
+                        <p class="text-sm font-bold text-slate-800 transition group-hover:text-primary">
+                            Data Pelanggan
+                        </p>
+
+                        <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
+                            Mengelola data pelanggan yang tersedia dalam PetERP.
+                        </p>
+
+                    </div>
+
+
+                    <div class="flex shrink-0 items-center gap-2">
+
+                        <span class="hidden text-xs font-semibold text-primary sm:block">
+                            Lihat Video Panduan
+                        </span>
+
+                        <span class="text-xl text-slate-300 transition group-hover:translate-x-1 group-hover:text-primary">
+                            →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- ================= HEWAN ================= -->
+                <button
+                    type="button"
+                    onclick="toggleHewan()"
+                    class="group flex w-full items-center gap-4 border-b border-slate-100 px-5 py-5 text-left transition hover:bg-blue-50/40 sm:px-6"
+                >
+
+                    <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-xl ring-1 ring-blue-100">
+                        🐾
+                    </div>
+
+
+                    <div class="min-w-0 flex-1">
+
+                        <p class="text-sm font-bold text-slate-800 transition group-hover:text-primary">
+                            Hewan
+                        </p>
+
+                        <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
+                            Mengelola data hewan yang dimiliki pelanggan.
+                        </p>
+
+                    </div>
+
+
+                    <div class="flex shrink-0 items-center gap-2">
+
+                        <span class="hidden text-xs font-semibold text-primary sm:block">
+                            Lihat Materi
+                        </span>
+
+                        <span
+                            id="hewanArrow"
+                            class="text-xl text-slate-300 transition duration-300"
+                        >
+                            →
+                        </span>
+
+                    </div>
+
+                </button>
+
+
+
+                <!-- ================= SUBMENU HEWAN ================= -->
+                <div
+                    id="hewanSubmenu"
+                    class="hidden bg-slate-50"
+                >
+
+
+                    <!-- DATA HEWAN -->
+                    <a
+                        href="../detail/data-hewan.html"
+                        class="group flex items-center gap-4 border-b border-slate-100 px-5 py-4 pl-16 transition hover:bg-blue-50/50 sm:px-6 sm:pl-20"
+                    >
+
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white text-lg ring-1 ring-slate-200">
+                            🐶
+                        </div>
+
+
+                        <div class="min-w-0 flex-1">
+
+                            <p class="text-sm font-bold text-slate-800 transition group-hover:text-primary">
+                                Data Hewan
+                            </p>
+
+                            <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
+                                Mengelola data hewan milik pelanggan.
+                            </p>
+
+                        </div>
+
+
+                        <div class="flex shrink-0 items-center gap-2">
+
+                            <span class="hidden text-xs font-semibold text-primary sm:block">
+                                Lihat Video Panduan
+                            </span>
+
+                            <span class="text-xl text-slate-300 transition group-hover:translate-x-1 group-hover:text-primary">
+                                →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- KATEGORI & JENIS HEWAN -->
+                    <a
+                        href="../detail/kategori-jenis-hewan.html"
+                        class="group flex items-center gap-4 px-5 py-4 pl-16 transition hover:bg-blue-50/50 sm:px-6 sm:pl-20"
+                    >
+
+                        <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white text-lg ring-1 ring-slate-200">
+                            🗂️
+                        </div>
+
+
+                        <div class="min-w-0 flex-1">
+
+                            <p class="text-sm font-bold text-slate-800 transition group-hover:text-primary">
+                                Kategori &amp; Jenis Hewan
+                            </p>
+
+                            <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
+                                Mengelola kategori dan jenis hewan dalam PetERP.
+                            </p>
+
+                        </div>
+
+
+                        <div class="flex shrink-0 items-center gap-2">
+
+                            <span class="hidden text-xs font-semibold text-primary sm:block">
+                                Lihat Video Panduan
+                            </span>
+
+                            <span class="text-xl text-slate-300 transition group-hover:translate-x-1 group-hover:text-primary">
+                                →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="border-t border-slate-200 bg-white">
+
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 py-8 sm:px-6 md:flex-row lg:px-8">
+
+
+        <div class="flex items-center gap-2">
+
+            <img
+                src="../assets/images/logo-peterp.png"
+                alt="PetERP"
+                class="h-6 w-6 object-contain"
+            >
+
+            <p class="text-sm font-semibold text-slate-700">
+                PetERP Documentation
+            </p>
+
+        </div>
+
+
+        <p class="text-xs text-slate-400">
+            © 2026 PetERP Documentation
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+
+    function toggleHewan() {
+
+        const submenu = document.getElementById('hewanSubmenu');
+        const arrow = document.getElementById('hewanArrow');
+
+        if (submenu.classList.contains('hidden')) {
+
+            submenu.classList.remove('hidden');
+
+            arrow.textContent = '↓';
+
+        } else {
+
+            submenu.classList.add('hidden');
+
+            arrow.textContent = '→';
+
+        }
+
+    }
+
+</script>
+
+</body>
+
+</html>

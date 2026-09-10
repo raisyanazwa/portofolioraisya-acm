@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PetERP Documentation</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1C6DFD',
+                        'primary-dark': '#1557CC'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen bg-slate-50 text-slate-900">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-xl">
+
+        <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
+
+            <!-- Logo -->
+            <a
+                href="#beranda"
+                id="logoHome"
+                class="flex items-center gap-3"
+            >
+
+                <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-50 ring-1 ring-blue-100">
+                    <img
+                        src="/assets/images/logo-peterp.png"
+                        alt="PetERP Logo"
+                        class="h-7 w-7 object-contain"
+                    >
+                </div>
+
+                <div>
+                    <span class="block text-base font-bold tracking-tight text-slate-900">
+                        PetERP
+                    </span>
+
+                    <span class="hidden text-[11px] font-medium text-slate-400 sm:block">
+                        Documentation
+                    </span>
+                </div>
+
+            </a>
+
+
+            <!-- Navigation -->
+            <nav class="flex items-center gap-2">
+
+                <!-- BERANDA -->
+                <a
+                    href="#beranda"
+                    data-target="beranda"
+                    class="nav-link relative rounded-lg bg-blue-50 px-4 py-2 text-sm font-semibold text-primary transition-all duration-300"
+                >
+
+                    Beranda
+
+                    <span
+                        class="absolute bottom-0 left-4 right-4 h-0.5 origin-center scale-x-100 rounded-full bg-primary transition-transform duration-300"
+                    ></span>
+
+                </a>
+
+
+                <!-- PANDUAN -->
+                <a
+                    href="#panduan"
+                    data-target="panduan"
+                    class="nav-link relative rounded-lg px-4 py-2 text-sm font-medium text-slate-600 transition-all duration-300 hover:bg-slate-100 hover:text-primary"
+                >
+
+                    Panduan
+
+                    <span
+                        class="absolute bottom-0 left-4 right-4 h-0.5 origin-center scale-x-0 rounded-full bg-primary transition-transform duration-300"
+                    ></span>
+
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section
+            id="beranda"
+            class="relative scroll-mt-20 overflow-hidden border-b border-slate-200 bg-white"
+        >
+
+            <!-- Background decoration -->
+
+            <div class="absolute -left-20 -top-20 h-72 w-72 rounded-full bg-blue-100/60 blur-3xl"></div>
+
+            <div class="absolute -right-20 top-20 h-80 w-80 rounded-full bg-indigo-100/60 blur-3xl"></div>
+
+            <div
+                class="absolute inset-0 bg-[linear-gradient(rgba(28,109,253,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(28,109,253,0.04)_1px,transparent_1px)] bg-[size:40px_40px]"
+            ></div>
+
+
+            <div class="relative mx-auto max-w-7xl px-5 pb-20 pt-20 sm:px-6 sm:pb-24 sm:pt-24 lg:px-8">
+
+                <div class="mx-auto max-w-4xl text-center">
+
+                    <!-- Badge -->
+
+                    <div class="mb-7 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-white px-4 py-2 shadow-sm">
+
+                        <span class="h-2 w-2 rounded-full bg-primary"></span>
+
+                        <span class="text-xs font-bold tracking-wider text-primary sm:text-sm">
+                            PETERP DOCUMENTATION
+                        </span>
+
+                    </div>
+
+
+                    <!-- Heading -->
+
+                    <h1 class="text-4xl font-black leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+
+                        Semua Panduan PetERP,
+
+                        <span class="text-primary">
+                            di Satu Tempat.
+                        </span>
+
+                    </h1>
+
+
+                    <!-- Description -->
+
+                    <p class="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-500 sm:text-lg">
+
+                        Temukan video panduan penggunaan PetERP
+                        dengan cepat dan pelajari setiap fitur aplikasi
+                        langkah demi langkah.
+
+                    </p>
+
+
+                    <!-- ================= SEARCH ================= -->
+
+                    <div class="mx-auto mt-9 max-w-2xl">
+
+                        <div class="relative">
+
+                            <!-- Search icon -->
+
+                            <svg
+                                class="absolute left-5 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"
+                                />
+
+                            </svg>
+
+
+                            <!-- Search input -->
+
+                            <input
+                                type="text"
+                                id="searchInput"
+                                autocomplete="off"
+                                placeholder="Cari panduan, menu, atau fitur..."
+                                class="h-16 w-full rounded-2xl border border-slate-200 bg-white pl-14 pr-6 text-sm text-slate-700 shadow-xl shadow-slate-200/50 outline-none transition placeholder:text-slate-400 focus:border-primary focus:ring-4 focus:ring-blue-100"
+                            >
+
+                        </div>
+
+
+                        <!-- ================= SEARCH RESULTS ================= -->
+
+                        <div
+                            id="searchResults"
+                            class="relative z-30 mt-3 hidden overflow-hidden rounded-2xl border border-slate-200 bg-white text-left shadow-2xl"
+                        ></div>
+
+                    </div>
+
+
+                    <!-- Info -->
+
+                    <div class="mt-7 flex flex-wrap justify-center gap-3">
+
+                        <div class="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-medium text-slate-500 shadow-sm">
+                            🎬 Video Tutorial
+                        </div>
+
+                        <div class="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-medium text-slate-500 shadow-sm">
+                            ⚡ Langkah Praktis
+                        </div>
+
+                        <div class="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-medium text-slate-500 shadow-sm">
+                            📚 10 Panduan Utama
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PANDUAN ================= -->
+
+        <section
+            id="panduan"
+            class="scroll-mt-20 px-5 py-20 sm:px-6 lg:px-8"
+        >
+
+            <div class="mx-auto max-w-7xl">
+
+
+                <!-- Section Header -->
+
+                <div class="mb-10 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+
+                    <div>
+
+                        <div class="mb-3 flex items-center gap-2">
+
+                            <span class="h-1 w-8 rounded-full bg-primary"></span>
+
+                            <span class="text-xs font-bold uppercase tracking-widest text-primary">
+                                Documentation
+                            </span>
+
+                        </div>
+
+
+                        <h2 class="text-3xl font-black tracking-tight text-slate-900">
+                            Pilih Panduan
+                        </h2>
+
+
+                        <p class="mt-2 max-w-xl text-sm leading-6 text-slate-500 sm:text-base">
+
+                            Pilih menu yang ingin kamu pelajari dan ikuti
+                            panduan videonya secara bertahap.
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- Total -->
+
+                    <div class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
+
+                        <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-50">
+                            🎬
+                        </div>
+
+                        <div>
+
+                            <p class="text-xs text-slate-400">
+                                Total Panduan
+                            </p>
+
+                            <p class="text-sm font-bold text-slate-800">
+                                10 Video
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= CARDS ================= -->
+
+                <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
+
+
+                    <!-- LOGIN -->
+
+                    <a
+                        href="login.html"
+                        class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-100/50"
+                    >
+
+                        <div class="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-blue-50 transition duration-500 group-hover:scale-150"></div>
+
+                        <div class="relative">
+
+                            <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-2xl ring-1 ring-blue-100 transition duration-300 group-hover:scale-110">
+                                🔐
+                            </div>
+
+
+                            <div class="flex items-center justify-between">
+
+                                <h3 class="text-lg font-bold text-slate-900 transition group-hover:text-primary">
+                                    Login
+                                </h3>
+
+                                <span class="text-xs font-bold text-slate-300">
+                                    01
+                                </span>
+
+                            </div>
+
+
+                            <p class="mt-2 text-sm leading-6 text-slate-500">
+                                Panduan masuk ke dalam sistem PetERP.
+                            </p>
+
+
+                            <div class="mt-6 flex items-center gap-2 text-sm font-bold text-primary">
+
+                                Mulai belajar
+
+                                <span class="transition duration-300 group-hover:translate-x-2">
+                                    →
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- DASHBOARD -->
+
+                    <a
+                        href="dashboard.html"
+                        class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-100/50"
+                    >
+
+                        <div class="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-blue-50 transition duration-500 group-hover:scale-150"></div>
+
+                        <div class="relative">
+
+                            <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-2xl ring-1 ring-blue-100 transition duration-300 group-hover:scale-110">
+                                📊
+                            </div>
+
+
+                            <div class="flex items-center justify-between">
+
+                                <h3 class="text-lg font-bold text-slate-900 transition group-hover:text-primary">
+                                    Dashboard
+                                </h3>
+
+                                <span class="text-xs font-bold text-slate-300">
+                                    02
+                                </span>
+
+                            </div>
+
+
+                            <p class="mt-2 text-sm leading-6 text-slate-500">
+                                Panduan memahami informasi dan fitur pada Dashboard.
+                            </p>
+
+
+                            <div class="mt-6 flex items-center gap-2 text-sm font-bold text-primary">
+
+                                Mulai belajar
+
+                                <span class="transition duration-300 group-hover:translate-x-2">
+                                    →
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- PRODUK -->
+
+                    <a
+                        href="produkdanstok.html"
+                        class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-100/50"
+                    >
+
+                        <div class="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-blue-50 transition duration-500 group-hover:scale-150"></div>
+
+                        <div class="relative">
+
+                            <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-2xl ring-1 ring-blue-100 transition duration-300 group-hover:scale-110">
+                                📦
+                            </div>
+
+
+                            <div class="flex items-center justify-between">
+
+                                <h3 class="text-lg font-bold text-slate-900 transition group-hover:text-primary">
+                                    Produk & Stok
+                                </h3>
+
+                                <span class="text-xs font-bold text-slate-300">
+                                    03
+                                </span>
+
+                            </div>
+
+
+                            <p class="mt-2 text-sm leading-6 text-slate-500">
+                                Panduan mengelola data produk dan stok dalam PetERP.
+                            </p>
+
+
+                            <div class="mt-6 flex items-center gap-2 text-sm font-bold text-primary">
+
+                                Mulai belajar
+
+                                <span class="transition duration-300 group-hover:translate-x-2">
+                                    →
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- PELANGGAN -->
+
+                    <a
+                        href="pelanggan.html"
+                        class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-100/50"
+                    >
+
+                        <div class="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-blue-50 transition duration-500 group-hover:scale-150"></div>
+
+                        <div class="relative">
+
+                            <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-2xl ring-1 ring-blue-100 transition duration-300 group-hover:scale-110">
+                                👥
+                            </div>
+
+
+                            <div class="flex items-center justify-between">
+
+                                <h3 class="text-lg font-bold text-slate-900 transition group-hover:text-primary">
+                                    Pelanggan
+                                </h3>
+
+                                <span class="text-xs font-bold text-slate-300">
+                                    04
+                                </span>
+
+                            </div>
+
+
+                            <p class="mt-2 text-sm leading-6 text-slate-500">
+                                Panduan mengelola data pelanggan dan data hewan.
+                            </p>
+
+
+                            <div class="mt-6 flex items-center gap-2 text-sm font-bold text-primary">
+
+                                Mulai belajar
+
+                                <span class="transition duration-300 group-hover:translate-x-2">
+                                    →
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- CABANG -->
+
+                    <a
+                        href="cabangdanpegawai.html"
+                        class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-100/50"
+                    >
+
+                        <div class="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-blue-50 transition duration-500 group-hover:scale-150"></div>
+
+                        <div class="relative">
+
+                            <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-2xl ring-1 ring-blue-100 transition duration-300 group-hover:scale-110">
+                                🏢
+                            </div>
+
+
+                            <div class="flex items-center justify-between">
+
+                                <h3 class="text-lg font-bold text-slate-900 transition group-hover:text-primary">
+                                    Cabang & Pegawai
+                                </h3>
+
+                                <span class="text-xs font-bold text-slate-300">
+                                    05
+                                </span>
+
+                            </div>
+
+
+                            <p class="mt-2 text-sm leading-6 text-slate-500">
+                                Panduan mengelola data cabang, jabatan, dan pegawai.
+                            </p>
+
+
+                            <div class="mt-6 flex items-center gap-2 text-sm font-bold text-primary">
+
+                                Mulai belajar
+
+                                <span class="transition duration-300 group-hover:translate-x-2">
+                                    →
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <!-- ================= CTA ================= -->
+
+                <div class="relative mt-12 overflow-hidden rounded-3xl bg-slate-900 p-8 sm:p-10">
+
+                    <!-- Decoration -->
+
+                    <div class="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-blue-600/20 blur-3xl"></div>
+
+                    <div class="absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-blue-500/10 blur-3xl"></div>
+
+
+                    <div class="relative flex flex-col justify-between gap-7 sm:flex-row sm:items-center">
+
+                        <div>
+
+                            <div class="mb-3 flex items-center gap-2">
+
+                                <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500 text-xs text-white">
+                                    ▶
+                                </span>
+
+                                <span class="text-xs font-bold uppercase tracking-widest text-blue-400">
+                                    Video Tutorial
+                                </span>
+
+                            </div>
+
+
+                            <h3 class="text-xl font-bold text-white sm:text-2xl">
+                                Belajar PetERP jadi lebih mudah.
+                            </h3>
+
+
+                            <p class="mt-2 max-w-xl text-sm leading-6 text-slate-400">
+
+                                Ikuti panduan video sesuai menu yang ingin
+                                kamu pelajari dan pahami penggunaan PetERP
+                                dengan lebih cepat.
+
+                            </p>
+
+                        </div>
+
+
+                        <a
+                            href="#panduan"
+                            id="ctaPanduan"
+                            class="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-bold text-white transition hover:bg-primary-dark"
+                        >
+
+                            Lihat Panduan
+
+                            <span>
+                                ↓
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="border-t border-slate-200 bg-white">
+
+        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 py-8 sm:px-6 md:flex-row lg:px-8">
+
+            <div class="flex items-center gap-2">
+
+                <img
+                    src="/assets/images/logo-peterp.png"
+                    alt="PetERP"
+                    class="h-6 w-6 object-contain"
+                >
+
+                <p class="text-sm font-semibold text-slate-700">
+                    PetERP Documentation
+                </p>
+
+            </div>
+
+
+            <p class="text-xs text-slate-400">
+                © 2026 PetERP Documentation
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= SEARCH JAVASCRIPT ================= -->
+
+    <script>
+
+        // ================= DATA PANDUAN =================
+
+        const panduan = [
+
+            {
+                title: "Login",
+                description: "Panduan masuk ke dalam sistem PetERP.",
+                keywords: "login masuk akun email password masuk peterp",
+                url: "login.html",
+                icon: "🔐"
+            },
+
+            {
+                title: "Dashboard",
+                description: "Panduan memahami informasi dan fitur pada Dashboard.",
+                keywords: "dashboard halaman utama informasi omzet transaksi pelanggan",
+                url: "dashboard.html",
+                icon: "📊"
+            },
+
+            {
+                title: "Produk & Stok",
+                description: "Panduan mengelola data produk dan stok dalam PetERP.",
+                keywords: "produk stok data produk barang harga beli harga jual SKU barcode",
+                url: "produkdanstok.html",
+                icon: "📦"
+            },
+
+            {
+                title: "Pelanggan",
+                description: "Panduan mengelola data pelanggan dan data hewan.",
+                keywords: "pelanggan customer data hewan pemilik hewan",
+                url: "pelanggan.html",
+                icon: "👥"
+            },
+
+            {
+                title: "Cabang & Pegawai",
+                description: "Panduan mengelola data cabang, jabatan, dan pegawai.",
+                keywords: "cabang pegawai jabatan karyawan lokasi",
+                url: "cabangdanpegawai.html",
+                icon: "🏢"
+            }
+
+        ];
+
+
+        // ================= ELEMENT =================
+
+        const searchInput = document.getElementById("searchInput");
+        const searchResults = document.getElementById("searchResults");
+
+
+        // ================= SEARCH =================
+
+        searchInput.addEventListener("input", function () {
+
+            const keyword = this.value
+                .toLowerCase()
+                .trim();
+
+
+            // Kalau search kosong
+
+            if (keyword === "") {
+
+                searchResults.classList.add("hidden");
+                searchResults.innerHTML = "";
+
+                return;
+            }
+
+
+            // Filter data panduan
+
+            const hasil = panduan.filter(item => {
+
+                const searchText = `
+                    ${item.title}
+                    ${item.description}
+                    ${item.keywords}
+                `.toLowerCase();
+
+                return searchText.includes(keyword);
+
+            });
+
+
+            // Tampilkan hasil
+
+            searchResults.classList.remove("hidden");
+
+
+            // Kalau tidak ada hasil
+
+            if (hasil.length === 0) {
+
+                searchResults.innerHTML = `
+
+                    <div class="px-5 py-5">
+
+                        <div class="flex items-center gap-3">
+
+                            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 text-lg">
+                                🔍
+                            </div>
+
+                            <div>
+
+                                <p class="text-sm font-semibold text-slate-700">
+                                    Panduan tidak ditemukan
+                                </p>
+
+                                <p class="mt-1 text-xs text-slate-400">
+                                    Coba gunakan kata kunci lain.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                `;
+
+                return;
+            }
+
+
+            // Tampilkan daftar hasil
+
+            searchResults.innerHTML = hasil.map(item => `
+
+                <a
+                    href="${item.url}"
+                    class="flex items-center gap-4 border-b border-slate-100 px-5 py-4 transition last:border-b-0 hover:bg-blue-50"
+                >
+
+                    <!-- Icon -->
+
+                    <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-xl ring-1 ring-blue-100">
+                        ${item.icon}
+                    </div>
+
+
+                    <!-- Text -->
+
+                    <div class="min-w-0 flex-1">
+
+                        <p class="text-sm font-bold text-slate-800">
+                            ${item.title}
+                        </p>
+
+                        <p class="mt-1 truncate text-xs text-slate-500">
+                            ${item.description}
+                        </p>
+
+                    </div>
+
+
+                    <!-- Arrow -->
+
+                    <span class="text-sm font-bold text-primary">
+                        →
+                    </span>
+
+                </a>
+
+            `).join("");
+
+        });
+
+
+        // ================= ESC KEY =================
+
+        searchInput.addEventListener("keydown", function (event) {
+
+            if (event.key === "Escape") {
+
+                searchInput.value = "";
+
+                searchResults.classList.add("hidden");
+
+                searchResults.innerHTML = "";
+
+            }
+
+        });
+
+
+        // ================= CLICK OUTSIDE =================
+
+        document.addEventListener("click", function (event) {
+
+            const searchContainer =
+                searchInput.parentElement.parentElement;
+
+            if (!searchContainer.contains(event.target)) {
+
+                searchResults.classList.add("hidden");
+
+            }
+
+        });
+
+
+        // ================= FOCUS SEARCH =================
+
+        searchInput.addEventListener("focus", function () {
+
+            if (this.value.trim() !== "") {
+
+                searchResults.classList.remove("hidden");
+
+            }
+
+        });
+
+    </script>
+
+
+    <!-- ================= NAVBAR JAVASCRIPT ================= -->
+
+    <script>
+
+        const navLinks = document.querySelectorAll(".nav-link");
+
+
+        // ================= ACTIVE NAV =================
+
+        function setActiveNav(activeLink) {
+
+            navLinks.forEach(link => {
+
+                // Reset background
+                link.classList.remove(
+                    "bg-blue-50",
+                    "text-primary",
+                    "font-semibold"
+                );
+
+
+                // Reset text
+                link.classList.add(
+                    "text-slate-600",
+                    "font-medium"
+                );
+
+
+                // Reset underline
+
+                const line = link.querySelector("span");
+
+                if (line) {
+
+                    line.classList.remove("scale-x-100");
+
+                    line.classList.add("scale-x-0");
+
+                }
+
+            });
+
+
+            // Kalau tidak ada link aktif
+
+            if (!activeLink) {
+                return;
+            }
+
+
+            // Aktifkan menu
+
+            activeLink.classList.remove(
+                "text-slate-600",
+                "font-medium"
+            );
+
+            activeLink.classList.add(
+                "bg-blue-50",
+                "text-primary",
+                "font-semibold"
+            );
+
+
+            // Aktifkan underline
+
+            const activeLine =
+                activeLink.querySelector("span");
+
+            if (activeLine) {
+
+                activeLine.classList.remove("scale-x-0");
+
+                activeLine.classList.add("scale-x-100");
+
+            }
+
+        }
+
+
+        // ================= NAV CLICK =================
+
+        navLinks.forEach(link => {
+
+            link.addEventListener("click", function (event) {
+
+                event.preventDefault();
+
+                const targetId = this.dataset.target;
+
+
+                // ================= BERANDA =================
+
+                if (targetId === "beranda") {
+
+                    setActiveNav(this);
+
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
+
+                    return;
+                }
+
+
+                // ================= PANDUAN =================
+
+                const targetSection =
+                    document.getElementById(targetId);
+
+                if (!targetSection) {
+                    return;
+                }
+
+
+                setActiveNav(this);
+
+
+                targetSection.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+            });
+
+        });
+
+
+        // ================= SECTION =================
+
+        const berandaSection =
+            document.getElementById("beranda");
+
+        const panduanSection =
+            document.getElementById("panduan");
+
+
+        // ================= NAV LINK =================
+
+        const berandaNav =
+            document.querySelector(
+                '.nav-link[data-target="beranda"]'
+            );
+
+        const panduanNav =
+            document.querySelector(
+                '.nav-link[data-target="panduan"]'
+            );
+
+
+        // ================= AUTO ACTIVE SAAT SCROLL =================
+
+        const sectionObserver =
+            new IntersectionObserver(
+
+                entries => {
+
+                    entries.forEach(entry => {
+
+                        if (!entry.isIntersecting) {
+                            return;
+                        }
+
+
+                        // ================= BERANDA =================
+
+                        if (entry.target.id === "beranda") {
+
+                            setActiveNav(berandaNav);
+
+                        }
+
+
+                        // ================= PANDUAN =================
+
+                        if (entry.target.id === "panduan") {
+
+                            setActiveNav(panduanNav);
+
+                        }
+
+                    });
+
+                },
+
+                {
+                    /*
+                     * Navbar tinggi 64px.
+                     * Observer mulai membaca area
+                     * setelah navbar.
+                     */
+
+                    rootMargin: "-80px 0px -40% 0px",
+
+                    threshold: 0
+                }
+
+            );
+
+
+        // Jalankan observer
+
+        if (berandaSection) {
+
+            sectionObserver.observe(berandaSection);
+
+        }
+
+
+        if (panduanSection) {
+
+            sectionObserver.observe(panduanSection);
+
+        }
+
+
+        // ================= CTA LIHAT PANDUAN =================
+
+        const ctaPanduan =
+            document.getElementById("ctaPanduan");
+
+
+        if (ctaPanduan) {
+
+            ctaPanduan.addEventListener("click", function (event) {
+
+                event.preventDefault();
+
+
+                const targetSection =
+                    document.getElementById("panduan");
+
+
+                if (!targetSection) {
+                    return;
+                }
+
+
+                // Aktifkan Panduan
+
+                if (panduanNav) {
+
+                    setActiveNav(panduanNav);
+
+                }
+
+
+                // Scroll smooth
+
+                targetSection.scrollIntoView({
+
+                    behavior: "smooth",
+
+                    block: "start"
+
+                });
+
+            });
+
+        }
+
+
+        // ================= LOGO → BERANDA =================
+
+        const logoHome =
+            document.getElementById("logoHome");
+
+
+        if (logoHome) {
+
+            logoHome.addEventListener("click", function (event) {
+
+                event.preventDefault();
+
+
+                // Aktifkan Beranda
+
+                if (berandaNav) {
+
+                    setActiveNav(berandaNav);
+
+                }
+
+
+                // Scroll ke atas
+
+                window.scrollTo({
+
+                    top: 0,
+
+                    behavior: "smooth"
+
+                });
+
+            });
+
+        }
+
+
+        // ================= ACTIVE AWAL =================
+
+        setActiveNav(berandaNav);
+
+    </script>
+
+</body>
+
+</html>
