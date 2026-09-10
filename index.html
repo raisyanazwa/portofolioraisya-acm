@@ -31,18 +31,15 @@
 
         <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
 
-            <!-- Logo -->
-            <a
-                href="#beranda"
-                id="logoHome"
-                class="flex items-center gap-3"
-            >
+            <!-- LOGO -->
+            <a href="#beranda" id="logoHome" class="flex items-center gap-3">
 
                 <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-50 ring-1 ring-blue-100">
                     <img
-                        src="/assets/images/logo-peterp.png"
+                        src="./assets/images/logo-peterp.png"
                         alt="PetERP Logo"
                         class="h-7 w-7 object-contain"
+                        onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-lg font-black text-blue-600\'>P</span>';"
                     >
                 </div>
 
@@ -59,7 +56,7 @@
             </a>
 
 
-            <!-- Navigation -->
+            <!-- NAVIGATION -->
             <nav class="flex items-center gap-2">
 
                 <!-- BERANDA -->
@@ -68,13 +65,11 @@
                     data-target="beranda"
                     class="nav-link relative rounded-lg bg-blue-50 px-4 py-2 text-sm font-semibold text-primary transition-all duration-300"
                 >
-
                     Beranda
 
                     <span
                         class="absolute bottom-0 left-4 right-4 h-0.5 origin-center scale-x-100 rounded-full bg-primary transition-transform duration-300"
                     ></span>
-
                 </a>
 
 
@@ -84,19 +79,16 @@
                     data-target="panduan"
                     class="nav-link relative rounded-lg px-4 py-2 text-sm font-medium text-slate-600 transition-all duration-300 hover:bg-slate-100 hover:text-primary"
                 >
-
                     Panduan
 
                     <span
                         class="absolute bottom-0 left-4 right-4 h-0.5 origin-center scale-x-0 rounded-full bg-primary transition-transform duration-300"
                     ></span>
-
                 </a>
 
             </nav>
 
         </div>
-
     </header>
 
 
@@ -109,8 +101,7 @@
             class="relative scroll-mt-20 overflow-hidden border-b border-slate-200 bg-white"
         >
 
-            <!-- Background decoration -->
-
+            <!-- BACKGROUND -->
             <div class="absolute -left-20 -top-20 h-72 w-72 rounded-full bg-blue-100/60 blur-3xl"></div>
 
             <div class="absolute -right-20 top-20 h-80 w-80 rounded-full bg-indigo-100/60 blur-3xl"></div>
@@ -124,8 +115,7 @@
 
                 <div class="mx-auto max-w-4xl text-center">
 
-                    <!-- Badge -->
-
+                    <!-- BADGE -->
                     <div class="mb-7 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-white px-4 py-2 shadow-sm">
 
                         <span class="h-2 w-2 rounded-full bg-primary"></span>
@@ -137,8 +127,7 @@
                     </div>
 
 
-                    <!-- Heading -->
-
+                    <!-- HEADING -->
                     <h1 class="text-4xl font-black leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
 
                         Semua Panduan PetERP,
@@ -150,24 +139,18 @@
                     </h1>
 
 
-                    <!-- Description -->
-
+                    <!-- DESCRIPTION -->
                     <p class="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-500 sm:text-lg">
-
                         Temukan video panduan penggunaan PetERP
                         dengan cepat dan pelajari setiap fitur aplikasi
                         langkah demi langkah.
-
                     </p>
 
 
-                    <!-- ================= SEARCH ================= -->
-
+                    <!-- SEARCH -->
                     <div class="mx-auto mt-9 max-w-2xl">
 
                         <div class="relative">
-
-                            <!-- Search icon -->
 
                             <svg
                                 class="absolute left-5 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400"
@@ -175,18 +158,14 @@
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
                             >
-
                                 <path
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                     stroke-width="2"
                                     d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"
                                 />
-
                             </svg>
 
-
-                            <!-- Search input -->
 
                             <input
                                 type="text"
@@ -199,8 +178,7 @@
                         </div>
 
 
-                        <!-- ================= SEARCH RESULTS ================= -->
-
+                        <!-- SEARCH RESULT -->
                         <div
                             id="searchResults"
                             class="relative z-30 mt-3 hidden overflow-hidden rounded-2xl border border-slate-200 bg-white text-left shadow-2xl"
@@ -209,8 +187,7 @@
                     </div>
 
 
-                    <!-- Info -->
-
+                    <!-- INFO -->
                     <div class="mt-7 flex flex-wrap justify-center gap-3">
 
                         <div class="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-medium text-slate-500 shadow-sm">
@@ -244,8 +221,7 @@
             <div class="mx-auto max-w-7xl">
 
 
-                <!-- Section Header -->
-
+                <!-- SECTION HEADER -->
                 <div class="mb-10 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
 
                     <div>
@@ -267,17 +243,14 @@
 
 
                         <p class="mt-2 max-w-xl text-sm leading-6 text-slate-500 sm:text-base">
-
                             Pilih menu yang ingin kamu pelajari dan ikuti
                             panduan videonya secara bertahap.
-
                         </p>
 
                     </div>
 
 
-                    <!-- Total -->
-
+                    <!-- TOTAL -->
                     <div class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
 
                         <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-50">
@@ -307,9 +280,8 @@
 
 
                     <!-- LOGIN -->
-
                     <a
-                        href="login.html"
+                        href="panduan/login.html"
                         class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-100/50"
                     >
 
@@ -341,13 +313,11 @@
 
 
                             <div class="mt-6 flex items-center gap-2 text-sm font-bold text-primary">
-
                                 Mulai belajar
 
                                 <span class="transition duration-300 group-hover:translate-x-2">
                                     →
                                 </span>
-
                             </div>
 
                         </div>
@@ -356,9 +326,8 @@
 
 
                     <!-- DASHBOARD -->
-
                     <a
-                        href="dashboard.html"
+                        href="panduan/dashboard.html"
                         class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-100/50"
                     >
 
@@ -390,13 +359,11 @@
 
 
                             <div class="mt-6 flex items-center gap-2 text-sm font-bold text-primary">
-
                                 Mulai belajar
 
                                 <span class="transition duration-300 group-hover:translate-x-2">
                                     →
                                 </span>
-
                             </div>
 
                         </div>
@@ -405,9 +372,8 @@
 
 
                     <!-- PRODUK -->
-
                     <a
-                        href="produkdanstok.html"
+                        href="panduan/produkdanstok.html"
                         class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-100/50"
                     >
 
@@ -439,13 +405,11 @@
 
 
                             <div class="mt-6 flex items-center gap-2 text-sm font-bold text-primary">
-
                                 Mulai belajar
 
                                 <span class="transition duration-300 group-hover:translate-x-2">
                                     →
                                 </span>
-
                             </div>
 
                         </div>
@@ -454,9 +418,8 @@
 
 
                     <!-- PELANGGAN -->
-
                     <a
-                        href="pelanggan.html"
+                        href="panduan/pelanggan.html"
                         class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-100/50"
                     >
 
@@ -488,13 +451,11 @@
 
 
                             <div class="mt-6 flex items-center gap-2 text-sm font-bold text-primary">
-
                                 Mulai belajar
 
                                 <span class="transition duration-300 group-hover:translate-x-2">
                                     →
                                 </span>
-
                             </div>
 
                         </div>
@@ -503,9 +464,8 @@
 
 
                     <!-- CABANG -->
-
                     <a
-                        href="cabangdanpegawai.html"
+                        href="panduan/cabangdanpegawai.html"
                         class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-100/50"
                     >
 
@@ -537,13 +497,11 @@
 
 
                             <div class="mt-6 flex items-center gap-2 text-sm font-bold text-primary">
-
                                 Mulai belajar
 
                                 <span class="transition duration-300 group-hover:translate-x-2">
                                     →
                                 </span>
-
                             </div>
 
                         </div>
@@ -556,8 +514,6 @@
                 <!-- ================= CTA ================= -->
 
                 <div class="relative mt-12 overflow-hidden rounded-3xl bg-slate-900 p-8 sm:p-10">
-
-                    <!-- Decoration -->
 
                     <div class="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-blue-600/20 blur-3xl"></div>
 
@@ -587,11 +543,9 @@
 
 
                             <p class="mt-2 max-w-xl text-sm leading-6 text-slate-400">
-
                                 Ikuti panduan video sesuai menu yang ingin
                                 kamu pelajari dan pahami penggunaan PetERP
                                 dengan lebih cepat.
-
                             </p>
 
                         </div>
@@ -602,13 +556,11 @@
                             id="ctaPanduan"
                             class="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-bold text-white transition hover:bg-primary-dark"
                         >
-
                             Lihat Panduan
 
                             <span>
                                 ↓
                             </span>
-
                         </a>
 
                     </div>
@@ -631,9 +583,10 @@
             <div class="flex items-center gap-2">
 
                 <img
-                    src="/assets/images/logo-peterp.png"
+                    src="./assets/images/logo-peterp.png"
                     alt="PetERP"
                     class="h-6 w-6 object-contain"
+                    onerror="this.style.display='none';"
                 >
 
                 <p class="text-sm font-semibold text-slate-700">
@@ -652,11 +605,13 @@
     </footer>
 
 
-    <!-- ================= SEARCH JAVASCRIPT ================= -->
+    <!-- ================= JAVASCRIPT ================= -->
 
     <script>
 
-        // ================= DATA PANDUAN =================
+        /* =====================================================
+           DATA PANDUAN
+        ===================================================== */
 
         const panduan = [
 
@@ -664,7 +619,7 @@
                 title: "Login",
                 description: "Panduan masuk ke dalam sistem PetERP.",
                 keywords: "login masuk akun email password masuk peterp",
-                url: "login.html",
+                url: "panduan/login.html",
                 icon: "🔐"
             },
 
@@ -672,7 +627,7 @@
                 title: "Dashboard",
                 description: "Panduan memahami informasi dan fitur pada Dashboard.",
                 keywords: "dashboard halaman utama informasi omzet transaksi pelanggan",
-                url: "dashboard.html",
+                url: "panduan/dashboard.html",
                 icon: "📊"
             },
 
@@ -680,7 +635,7 @@
                 title: "Produk & Stok",
                 description: "Panduan mengelola data produk dan stok dalam PetERP.",
                 keywords: "produk stok data produk barang harga beli harga jual SKU barcode",
-                url: "produkdanstok.html",
+                url: "panduan/produkdanstok.html",
                 icon: "📦"
             },
 
@@ -688,7 +643,7 @@
                 title: "Pelanggan",
                 description: "Panduan mengelola data pelanggan dan data hewan.",
                 keywords: "pelanggan customer data hewan pemilik hewan",
-                url: "pelanggan.html",
+                url: "panduan/pelanggan.html",
                 icon: "👥"
             },
 
@@ -696,20 +651,20 @@
                 title: "Cabang & Pegawai",
                 description: "Panduan mengelola data cabang, jabatan, dan pegawai.",
                 keywords: "cabang pegawai jabatan karyawan lokasi",
-                url: "cabangdanpegawai.html",
+                url: "panduan/cabangdanpegawai.html",
                 icon: "🏢"
             }
 
         ];
 
 
-        // ================= ELEMENT =================
+        /* =====================================================
+           SEARCH
+        ===================================================== */
 
         const searchInput = document.getElementById("searchInput");
         const searchResults = document.getElementById("searchResults");
 
-
-        // ================= SEARCH =================
 
         searchInput.addEventListener("input", function () {
 
@@ -718,8 +673,7 @@
                 .trim();
 
 
-            // Kalau search kosong
-
+            /* Search kosong */
             if (keyword === "") {
 
                 searchResults.classList.add("hidden");
@@ -729,8 +683,7 @@
             }
 
 
-            // Filter data panduan
-
+            /* Filter */
             const hasil = panduan.filter(item => {
 
                 const searchText = `
@@ -744,13 +697,10 @@
             });
 
 
-            // Tampilkan hasil
-
             searchResults.classList.remove("hidden");
 
 
-            // Kalau tidak ada hasil
-
+            /* Tidak ditemukan */
             if (hasil.length === 0) {
 
                 searchResults.innerHTML = `
@@ -785,8 +735,7 @@
             }
 
 
-            // Tampilkan daftar hasil
-
+            /* Hasil pencarian */
             searchResults.innerHTML = hasil.map(item => `
 
                 <a
@@ -794,14 +743,10 @@
                     class="flex items-center gap-4 border-b border-slate-100 px-5 py-4 transition last:border-b-0 hover:bg-blue-50"
                 >
 
-                    <!-- Icon -->
-
                     <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-xl ring-1 ring-blue-100">
                         ${item.icon}
                     </div>
 
-
-                    <!-- Text -->
 
                     <div class="min-w-0 flex-1">
 
@@ -816,8 +761,6 @@
                     </div>
 
 
-                    <!-- Arrow -->
-
                     <span class="text-sm font-bold text-primary">
                         →
                     </span>
@@ -829,7 +772,9 @@
         });
 
 
-        // ================= ESC KEY =================
+        /* =====================================================
+           ESC SEARCH
+        ===================================================== */
 
         searchInput.addEventListener("keydown", function (event) {
 
@@ -846,7 +791,9 @@
         });
 
 
-        // ================= CLICK OUTSIDE =================
+        /* =====================================================
+           CLICK OUTSIDE SEARCH
+        ===================================================== */
 
         document.addEventListener("click", function (event) {
 
@@ -862,7 +809,9 @@
         });
 
 
-        // ================= FOCUS SEARCH =================
+        /* =====================================================
+           FOCUS SEARCH
+        ===================================================== */
 
         searchInput.addEventListener("focus", function () {
 
@@ -874,38 +823,30 @@
 
         });
 
-    </script>
 
+        /* =====================================================
+           NAVBAR
+        ===================================================== */
 
-    <!-- ================= NAVBAR JAVASCRIPT ================= -->
+        const navLinks =
+            document.querySelectorAll(".nav-link");
 
-    <script>
-
-        const navLinks = document.querySelectorAll(".nav-link");
-
-
-        // ================= ACTIVE NAV =================
 
         function setActiveNav(activeLink) {
 
             navLinks.forEach(link => {
 
-                // Reset background
                 link.classList.remove(
                     "bg-blue-50",
                     "text-primary",
                     "font-semibold"
                 );
 
-
-                // Reset text
                 link.classList.add(
                     "text-slate-600",
                     "font-medium"
                 );
 
-
-                // Reset underline
 
                 const line = link.querySelector("span");
 
@@ -920,14 +861,10 @@
             });
 
 
-            // Kalau tidak ada link aktif
-
             if (!activeLink) {
                 return;
             }
 
-
-            // Aktifkan menu
 
             activeLink.classList.remove(
                 "text-slate-600",
@@ -940,8 +877,6 @@
                 "font-semibold"
             );
 
-
-            // Aktifkan underline
 
             const activeLine =
                 activeLink.querySelector("span");
@@ -957,7 +892,9 @@
         }
 
 
-        // ================= NAV CLICK =================
+        /* =====================================================
+           NAV CLICK
+        ===================================================== */
 
         navLinks.forEach(link => {
 
@@ -965,11 +902,11 @@
 
                 event.preventDefault();
 
-                const targetId = this.dataset.target;
+                const targetId =
+                    this.dataset.target;
 
 
-                // ================= BERANDA =================
-
+                /* BERANDA */
                 if (targetId === "beranda") {
 
                     setActiveNav(this);
@@ -983,10 +920,10 @@
                 }
 
 
-                // ================= PANDUAN =================
-
+                /* PANDUAN */
                 const targetSection =
                     document.getElementById(targetId);
+
 
                 if (!targetSection) {
                     return;
@@ -1006,7 +943,9 @@
         });
 
 
-        // ================= SECTION =================
+        /* =====================================================
+           SECTION
+        ===================================================== */
 
         const berandaSection =
             document.getElementById("beranda");
@@ -1014,8 +953,6 @@
         const panduanSection =
             document.getElementById("panduan");
 
-
-        // ================= NAV LINK =================
 
         const berandaNav =
             document.querySelector(
@@ -1028,7 +965,9 @@
             );
 
 
-        // ================= AUTO ACTIVE SAAT SCROLL =================
+        /* =====================================================
+           AUTO ACTIVE NAV SAAT SCROLL
+        ===================================================== */
 
         const sectionObserver =
             new IntersectionObserver(
@@ -1042,16 +981,12 @@
                         }
 
 
-                        // ================= BERANDA =================
-
                         if (entry.target.id === "beranda") {
 
                             setActiveNav(berandaNav);
 
                         }
 
-
-                        // ================= PANDUAN =================
 
                         if (entry.target.id === "panduan") {
 
@@ -1064,21 +999,12 @@
                 },
 
                 {
-                    /*
-                     * Navbar tinggi 64px.
-                     * Observer mulai membaca area
-                     * setelah navbar.
-                     */
-
                     rootMargin: "-80px 0px -40% 0px",
-
                     threshold: 0
                 }
 
             );
 
-
-        // Jalankan observer
 
         if (berandaSection) {
 
@@ -1094,7 +1020,9 @@
         }
 
 
-        // ================= CTA LIHAT PANDUAN =================
+        /* =====================================================
+           CTA LIHAT PANDUAN
+        ===================================================== */
 
         const ctaPanduan =
             document.getElementById("ctaPanduan");
@@ -1116,16 +1044,12 @@
                 }
 
 
-                // Aktifkan Panduan
-
                 if (panduanNav) {
 
                     setActiveNav(panduanNav);
 
                 }
 
-
-                // Scroll smooth
 
                 targetSection.scrollIntoView({
 
@@ -1140,7 +1064,9 @@
         }
 
 
-        // ================= LOGO → BERANDA =================
+        /* =====================================================
+           LOGO → BERANDA
+        ===================================================== */
 
         const logoHome =
             document.getElementById("logoHome");
@@ -1153,16 +1079,12 @@
                 event.preventDefault();
 
 
-                // Aktifkan Beranda
-
                 if (berandaNav) {
 
                     setActiveNav(berandaNav);
 
                 }
 
-
-                // Scroll ke atas
 
                 window.scrollTo({
 
@@ -1177,12 +1099,13 @@
         }
 
 
-        // ================= ACTIVE AWAL =================
+        /* =====================================================
+           ACTIVE AWAL
+        ===================================================== */
 
         setActiveNav(berandaNav);
 
     </script>
 
 </body>
-
 </html>
